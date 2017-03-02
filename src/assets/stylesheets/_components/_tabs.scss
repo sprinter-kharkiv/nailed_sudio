@@ -1,0 +1,50 @@
+/* TABS */
+
+.nav-tabs {
+  text-align: center;
+  border: none;
+  >li {
+    float: none;
+    display: inline-block;
+    &+li {
+      margin-left: 40px;
+      @include respond-to(xs) {
+        margin-left: 10px;
+      }
+    }
+    &.active {
+      a {
+        &:not(.btn) {
+          border: none;
+          &:hover, &:focus {
+            border: none;
+          }
+        }
+      }
+      .btn {
+        @extend .btn-success;
+        &:hover, &:focus {
+          cursor: auto;
+        }
+      }
+    }
+    >a {
+      border-radius: 4px;
+      &:not(.btn) {
+        margin: 0;
+        border: none;
+        &:hover, &:focus {
+          border: none;
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+.tab-content {
+  margin-top: 50px;
+  @include respond-to(xs) {
+    margin-top: 30px;
+  }
+}

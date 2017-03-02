@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<title>Join us page</title>
+	<link rel="stylesheet" href="assets/stylesheets/main.css">
+</head>
+
+<body>
+
+	//= template/navbar.html
+
+
+	<main class="content-holder">
+		
+		<section class="section section--below-nav text-center">
+			<div class="container container--xs">
+				<h1 class="h3 title">Join our mailing list</h1>
+				<h4 class="text-success">Thanks for your interest in INBRACE! You’re awesome. </h4>
+			</div><!-- container -->
+			
+		</section><!-- section -->
+		
+		
+		
+		
+
+	</main><!-- content-holder -->
+
+
+	//= template/footer.html
+
+
+	//= template/scripts-dependencies.html
+	
+	
+
+
+
+</body>
+</html>

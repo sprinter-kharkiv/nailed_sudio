@@ -1,0 +1,113 @@
+/* GRID FLOATED */
+
+$grid-block-item-border: $concrete;
+$grid-item-color: #373737;
+$grid-item-bg: #FFF6F0;
+$grid-item-danger-light: #FFF3F3;
+$grid-item-danger: #FFAEB8;
+$grid-item-danger-soft: #F56A7C;
+
+
+.grid-floatet {
+  @include clearfix();
+  &:not(:last-child) {
+    margin-bottom: 60px;
+    @include respond-to(xs) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.grid-floatet__item {
+  flex: 1 0 100%;
+  float: left;
+  height: 180px;
+  color: $grid-item-color;
+  background: $grid-item-bg;
+  @include respond-to(sm) {
+    font-size: 14px;
+  }
+  @include respond-to(xs) {
+    height: auto;
+  }
+}
+.grid-floatet__item--tall {
+  height: 360px;
+  @include respond-to(xs) {
+    height: auto;
+  }
+}
+
+.grid-floatet__item-2-3 {
+  width: 75%;
+  @include respond-to(xs) {
+    width: 100%;
+  }
+}
+.grid-floatet__item-1-3 {
+  width: 25%;
+  @include respond-to(xs) {
+    width: 100%;
+  }
+}
+.grid-floatet__item-2-4 {
+  width: 50%;
+  @include respond-to(xs) {
+    width: 100%;
+  }
+}
+
+.grid-item-danger-light {
+  background: $grid-item-danger-light;
+}
+.grid-item-danger {
+  background: $grid-item-danger;
+}
+.grid-item-danger-soft {
+  background: $grid-item-danger-soft;
+}
+
+.grid-item-danger, .grid-item-danger-soft {
+  color: $white;
+  .grid-floatet__title {
+    color: $white;
+  }
+}
+
+.grid-floatet__text-holder {
+  padding: 30px;
+  overflow: hidden;
+  @include respond-to(xs) {
+    padding: 20px 15px;
+  }
+}
+
+.grid-floatet__title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.grid-floatet__text {
+  line-height: 26px;
+}
+
+.grid-floatet__carousel {
+  height: 100%;
+  .slick-list {
+    height: 100%;
+  }
+  .slick-track {
+    height: 100%;
+  }
+}
+.grid-floatet__carousel-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  @include respond-to(xs) {
+    padding-bottom: 15%;
+  }
+  @include respond-to(xs-small) {
+    padding-bottom: 35%;
+  }
+}

@@ -1,0 +1,38 @@
+/* SECTION */
+
+.section {
+  position: relative;
+  padding: 90px 0px;
+  @include respond-to(sm) {
+    padding: 35px 0;
+  }
+}
+.section--has-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.section--has-bg-bottom {
+  background-position: 50% bottom;
+}
+.section--below-nav {
+  padding: calc(#{$navbar-height + 90px}) 0px 90px 0;
+  @include respond-to(xs) {
+    padding: calc(#{$navbar-height + 0px}) 0px 35px 0;
+  }
+}
+.section--pb-huge {
+  padding-bottom: 460px;
+  @include respond-to(md) {
+    padding-bottom: 300px;
+  }
+  @include respond-to(sm) {
+    padding-bottom: 200px;
+  }
+  @include respond-to(xs) {
+    padding-bottom: 35px;
+  }
+}
+.section--has-border {
+  border-bottom: 1px solid $mercury-soft;
+}

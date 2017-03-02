@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<title>Join us page</title>
+	<link rel="stylesheet" href="assets/stylesheets/main.css">
+</head>
+
+<body>
+
+	//= template/navbar.html
+
+
+	<main class="content-holder">
+		
+		<section class="section section--below-nav text-center">
+			<div class="container container--xs">
+				<h1 class="h3 title-sm">Join our mailing list</h1>
+				<p class="title">If you’d like to learn more about INBRACE, please sign up for our mailing list.  Don’t worry we don’t believe in spam.</p>
+				
+				<ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation"><a href="#patient-tab" class="btn btn-success-ghost" aria-controls="patient-tab" role="tab" data-toggle="tab">I’m a Patient</a></li>
+			    <li role="presentation"><a href="#provider-tab" class="btn btn-success-ghost" aria-controls="provider-tab" role="tab" data-toggle="tab">I’m a Provider</a></li>
+			  </ul><!-- nav-tabs -->
+				
+				<div class="tab-content">
+			    <div role="tabpanel" class="tab-pane fade" id="patient-tab">
+						<form action="">
+							<div class="form-group">
+								<span class="label-floated">FIRST NAME</span>
+								<input type="name" class="form-control">
+							</div><!-- form-group -->
+							
+							<div class="form-group">
+								<span class="label-floated">last NAME</span>
+								<input type="name" class="form-control">
+							</div><!-- form-group -->
+							
+							<div class="form-group">
+								<span class="label-floated">EMAIL ADDRESS</span>
+								<input type="name" class="form-control">
+							</div><!-- form-group -->
+							
+							<div class="form-group">
+								<span class="label-floated">ZIP CODE</span>
+								<input type="text" class="form-control">
+							</div><!-- form-group -->
+							
+							<button type="submit" name="button" class="btn btn-success btn-long btn-submit-bottom">Join</button>
+						</form>
+					</div><!-- tab-pane -->
+					
+			    <div role="tabpanel" class="tab-pane fade" id="provider-tab">
+						<form action="">
+							<div class="form-group">
+								<span class="label-floated">FIRST NAME</span>
+								<input type="name" class="form-control">
+							</div><!-- form-group -->
+							
+							<div class="form-group">
+								<span class="label-floated">last NAME</span>
+								<input type="name" class="form-control">
+							</div><!-- form-group -->
+							
+							<div class="form-group">
+								<span class="label-floated">EMAIL ADDRESS</span>
+								<input type="name" class="form-control">
+							</div><!-- form-group -->
+							
+							<div class="form-group">
+								<span class="label-floated">phone number</span>
+								<input type="tel" class="form-control">
+							</div><!-- form-group -->
+							
+							<div class="form-group">
+								<span class="label-floated">street address</span>
+								<input type="text" class="form-control">
+							</div><!-- form-group -->
+							
+							<div class="form-group">
+								<span class="label-floated">street address 2</span>
+								<input type="text" class="form-control">
+							</div><!-- form-group -->
+							
+							<div class="form-group">
+								<span class="label-floated">city</span>
+								<select name="" class="form-control" id="">
+									<option value="">1</option>
+									<option value="">2</option>
+								</select>
+							</div><!-- form-group -->
+							
+							<div class="form-group">
+								<span class="label-floated">ZIP CODE</span>
+								<input type="text" class="form-control">
+							</div><!-- form-group -->
+							
+							<button type="submit" name="button" class="btn btn-success btn-long btn-submit-bottom">Join</button>
+						</form>
+					</div><!-- tab-pane -->
+			  </div><!-- tab-content -->
+				
+				
+				
+			</div><!-- container -->
+			
+		</section><!-- section -->
+		
+		
+		
+		
+
+	</main><!-- content-holder -->
+
+
+	//= template/footer.html
+
+
+	//= template/scripts-dependencies.html
+	
+	
+
+
+
+</body>
+</html>

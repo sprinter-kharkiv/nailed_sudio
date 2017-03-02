@@ -1,0 +1,116 @@
+/* NAVBAR */
+
+$navbar-bg: #ccc;
+$navbar-height: 215px;
+$navbar-height-xs: 50px;
+$navbar-letter-spacing: 1.4px;
+$nav-link: #000;
+
+.navbar {
+  background: $navbar-bg;
+  border-radius: 0;
+  margin-bottom: 0;
+  border: none;
+  text-transform: uppercase;
+  min-height: $navbar-height;
+  @include respond-to(xs) {
+    min-height: $navbar-height-xs;
+  }
+}
+
+
+.navbar-nav {
+  @include respond-to(sm-min) {
+    letter-spacing: $navbar-letter-spacing;
+  }
+  >li {
+    &.active {
+      >a {
+          background: transparent;
+          color: $success;
+      }
+    }
+    >a {
+      color: $nav-link;
+      font-size: 26px;
+      font-weight: bold;
+      padding: 28px 15px;
+      text-transform: none;
+      @include respond-to(md) {
+        padding: 28px 10px;
+      }
+      @include respond-to(sm) {
+        padding: 28px 6px;
+        font-size: 12px;
+      }
+      @include respond-to(xs) {
+        padding: 7.5px 15px;
+        font-size: 14px;
+      }
+      &:hover, &:focus {
+        background: transparent;
+        color: $success;
+      }
+    }
+    .navbar-btn {
+      padding: 10.5px 12px;
+      font-size: 14px;
+      font-family: $font-book;
+      line-height: 100%;
+    }
+  }
+}
+.navbar-right {
+  @include respond-to(xs-min) {
+    margin-right: 0;
+  }
+}
+.navbar-btn {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  @include respond-to(xs-min) {
+    margin-left: 10px;
+  }
+  @include respond-to(sm) {
+    font-size: 12px;
+  }
+  @include respond-to(xs) {
+    margin: 5px 15px 10px 15px;
+    font-size: 14px;
+  }
+}
+
+
+.navbar-brand {
+  width: 150px;
+  font-size: 25px;
+  padding: 23px 15px;
+  height: 76px;
+  @include respond-to(sm) {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+  @include respond-to(xs) {
+    padding: 10px 15px;
+    height: 50px
+  }
+}
+.navbar-brand--centered {
+  float: none;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.navbar-logo {
+  width: 100%;
+  display: block;
+  font-family: $font-medium;
+  tspan {
+    font-family: $font-book;
+  }
+}
+.navbar-toggle {
+  margin-top: 7px;
+  >.icon-bar {
+    background: rgba($success, .75);
+  }
+}

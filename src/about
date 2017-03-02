@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<title>About page</title>
+	<link rel="stylesheet" href="assets/stylesheets/main.css">
+</head>
+
+<body>
+
+	//= template/navbar.html
+
+
+	<main class="content-holder">
+		
+		<section class="section section--below-nav text-center">
+			<div class="container container--xs">
+				<h1 class="h3 title">Our Mission</h1>
+				<p>Swift Health Systems was founded nearly half a decade ago by a team of Orthodontists, Engineers, Biologists, Computer Scientists, Advanced Manufacturing Experts and experienced Executives with a mission to redefine the orthodontic treatment experience for patients and orthodontists alike. For patients: an enhanced experience that let’s you freely enjoy the benefits of your straightening teeth. For orthodontists: a treatment solution that drives practice development.  For our investors a clear solution to create tangible value to all of our customers. Swift Health Systems is supported by an investment team with deep experience in venture capital, consumer marketing, branding, and orthodontic thought leadership.</p>
+			</div><!-- container -->
+			
+			<div class="divider divider--huge"></div>
+			
+			<div class="container container">
+				<h3 class="title">Advisors</h3>
+				<div class="row text-center">
+					<div class="col-sm-4">
+						<div class="content-item">
+							<img src="assets/images/temp/user.png" class="img-content img-responsive img-circle center-block" alt="">
+							<p>
+								<b>Dr. Ronald Redmond</b><br>
+								CEO of the Schulman Study Group
+							</p>
+						</div><!-- content-item -->
+					</div><!-- col -->
+					
+					<div class="col-sm-4">
+						<img src="assets/images/temp/user.png" class="img-content img-responsive img-circle center-block" alt="">
+						<p>
+							<b>Dr. Glenn T. Sameshima</b><br>
+							Chairman and Program Director of the Advanced Orthodontic Program at the Herman Ostrow School of Dentistry of the University of Southern California
+						</p>
+					</div><!-- col -->
+					
+					<div class="col-sm-4">
+						<img src="assets/images/temp/user.png" class="img-content img-responsive img-circle center-block" alt="">
+						<p>
+							<b>Dr. Glenn T. Sameshima</b><br>
+							Chairman and Program Director of the Advanced Orthodontic Program at the Herman Ostrow School of Dentistry of the University of Southern California
+						</p>
+					</div><!-- col -->
+				</div><!-- row -->
+			</div><!-- container -->
+		</section><!-- section -->
+		
+		
+		
+		
+
+	</main><!-- content-holder -->
+
+
+	//= template/footer.html
+
+
+	//= template/scripts-dependencies.html
+	
+	
+
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "name": "postcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nagalsky/postCSS.git"
+  },
+  "author": "Nagalsky Nikita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nagalsky/postCSS/issues"
+  },
+  "homepage": "https://github.com/Nagalsky/postCSS#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.9",
+    "imagemin-pngquant": "^5.0.0",
+    "pump": "^1.0.1"
+  },
+  "dependencies": {
+    "imagemin-jpeg-recompress": "^5.1.0"
+  }
+}

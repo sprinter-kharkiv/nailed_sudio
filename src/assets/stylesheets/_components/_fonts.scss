@@ -1,0 +1,31 @@
+/* Fonts */
+
+$font-path: '../fonts/';
+
+//GothamRounded font
+@font-face {
+  font-family: 'GothamRounded-Book';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}GothamRounded/GothamRounded-Book.woff2') format('woff2'),
+       url('#{$font-path}GothamRounded/GothamRounded-Book.woff') format('woff'),
+       url('#{$font-path}GothamRounded/GothamRounded-Book.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'GothamRounded-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}GothamRounded/GothamRounded-Medium.woff2') format('woff2'),
+       url('#{$font-path}GothamRounded/GothamRounded-Medium.woff') format('woff'),
+       url('#{$font-path}GothamRounded/GothamRounded-Medium.ttf') format('ttf');
+}
+
+//PermanentMarker font
+@font-face {
+  font-family: 'PermanentMarker';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}Permanent-marker/PermanentMarker.woff2') format('woff2'),
+       url('#{$font-path}Permanent-marker/PermanentMarker.woff') format('woff'),
+       url('#{$font-path}Permanent-marker/PermanentMarker.ttf') format('ttf');
+}

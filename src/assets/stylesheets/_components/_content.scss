@@ -1,0 +1,33 @@
+/* CONTENT */
+
+
+.content-item {
+  margin-bottom: 60px;
+  @include respond-to(sm) {
+    margin-bottom: 40px;
+  }
+  @include respond-to(xs) {
+    margin-bottom: 25px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.content-item--xs {
+  max-width: 260px;
+  @extend .center-block;
+}
+
+.content-item__icon {
+  font-size: 32px;
+  display: inline-block;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.img-content {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

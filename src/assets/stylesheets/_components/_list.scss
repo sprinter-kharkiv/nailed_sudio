@@ -1,0 +1,17 @@
+/* LIST */
+
+.list-underline {
+  @extend .list-unstyled;
+  >li {
+    >a {
+      text-decoration: underline;
+      color: $dove-gray-soft;
+      display: inline-block;
+      padding: 2px 0;
+      &:hover, &:focus {
+        color: $success;
+        text-decoration: none;
+      }
+    }
+  }
+}

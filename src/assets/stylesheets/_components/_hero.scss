@@ -1,0 +1,41 @@
+/* HERO */
+
+$hero-title-color: $scorpion;
+
+
+.hero--section {
+  padding: calc(#{$navbar-height + 340px}) 0px 180px 0;
+  @include respond-to(xs) {
+    padding: calc(#{$navbar-height-xs} + 75px) 0 75px 0;
+  }
+}
+
+.hero--section-equal {
+  padding: calc(#{$navbar-height + 180px}) 0px 180px 0;
+  @include respond-to(xs) {
+    padding: calc(#{$navbar-height-xs} + 75px) 0 75px 0;
+  }
+}
+
+.hero-column-section {
+  padding-top: $navbar-height;
+  @include respond-to(xs) {
+    padding-top: calc(#{$navbar-height-xs} + 25px);
+  }
+}
+.hero__title {
+  margin-bottom: 5px;
+  color: $hero-title-color;
+}
+.hero-title--has-shadow {
+  text-shadow: 0px 0px 1px rgba($black, .35);
+}
+
+.hero__subtitle {
+  font-size: 25px;
+  font-family: $font-secondary;
+  line-height: 1.4;
+  @include respond-to(xs) {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,30 @@
+/* PRICING */
+
+.pricing {
+  
+}
+
+.pricing__item {
+  @extend .flex, .flex-item-center;
+  @include respond-to(xs) {
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}
+.pricing__heading {
+  flex-basis: 185px;
+  @extend .flex-no-shrink;
+  @include respond-to(xs-min) {
+    margin-bottom: 0;
+  }
+}
+.pricing__body {
+  @extend .flex-grow;
+  padding: 30px 0;
+  border-top: 1px solid $mercury;
+  @include respond-to(xs) {
+    padding: 15px 0;
+  }
+}

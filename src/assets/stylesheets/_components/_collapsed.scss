@@ -1,0 +1,96 @@
+/* COLLAPSED */
+
+$collapse-btn-icon-bg: $mercury;
+$collapse-btn-icon-color: $mine-shaft;
+
+ .collapsed-holder {
+   display: none;
+ }
+ 
+ .collapsed-holder--has-padding {
+   padding: 15px 0;
+ }
+
+.collapse-btn {
+  font-family: $font-medium;
+  color: $body-color;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  position: relative;
+  z-index: 20;
+  @extend .flex-inline, .flex-content-center, .flex-item-center;
+  &:hover, &:focus {
+    color: $collapse-btn-icon-color;
+  }
+  &.active {
+    .collapse-btn__icon {
+      transform: rotate(90deg);
+      &:before {
+        content: none;
+      }
+    }
+  }
+}
+.collapse-btn--animated {
+  &.active {
+    height: 0;
+    .collapse-btn__text {
+      opacity: 0;
+      @include translate3d(0, -40px, 0);
+      visibility: hidden;
+    }
+    .collapse-btn__icon {
+      transform:translate3d(0, 130px, 0) rotate(90deg);
+      @include respond-to(sm) {
+        transform:translate3d(0, 60px, 0) rotate(90deg);
+      }
+    }
+  }
+}
+.collapse-btn__text, .collapse-btn__icon {
+  @include transition(500ms);
+}
+.collapse-btn__text {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+.collapse-btn__icon {
+  width: 34px;
+  height: 34px;
+  background: $collapse-btn-icon-bg;
+  border-radius: 50%;
+  position: relative;
+  @include respond-to(xs) {
+    width: 28px;
+    height: 28px;
+  }
+  &:hover {
+    background: darken($collapse-btn-icon-bg, 10%);
+  }
+  &:before, &:after {
+    content: '';
+    width: 14px;
+    height: 3px;
+    background: $collapse-btn-icon-color;
+    position: absolute;
+    border-radius: 2px;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 50%;
+    margin-left: -7px;
+  }
+  &:after {
+    margin-top: -1.5px;
+    @include rotate(90deg);
+  }
+}
+
+
+.collapse-btn__icon--rose {
+  background: $rose;
+  &:hover {
+    background: darken($rose, 10%);
+  }
+}

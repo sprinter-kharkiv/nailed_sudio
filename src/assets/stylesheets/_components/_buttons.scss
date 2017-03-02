@@ -1,0 +1,89 @@
+/* BUTTONS */
+
+
+.btn {
+  padding: 13px 27px;
+  position: relative;
+  z-index: 10;
+  font-size: 19px;
+  font-family: $font-medium;
+  @include respond-to(xs) {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  &:before {
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: calc(100% + 2px);
+    width: calc(100% + 2px);
+    left: -1px;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    opacity: 0;
+    position: absolute;
+    border-radius: 4px;
+    @include transition(250ms);
+  }
+  &.btn-ghost {
+    border: 1px solid transparent;
+    background: transparent;
+    background-image: linear-gradient(to left, $animated-gradient-start 0%, $animated-gradient-start 20%, $animated-gradient-start 25%, $animated-gradient-middle 45%, $animated-gradient-middle 50%, $animated-gradient-middle 60%, rgba($animated-gradient-end, .65) 65%, rgba($animated-gradient-end, .85) 75%, $animated-gradient-end, $animated-gradient-start 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-moving 6s linear infinite;
+    &:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid transparent;
+      border-image: linear-gradient(to bottom, $animated-gradient-start 0%, $animated-gradient-start 20%, $animated-gradient-start 25%, $animated-gradient-middle 45%, $animated-gradient-middle 50%, $animated-gradient-middle 60%, rgba($animated-gradient-end, .65) 65%, rgba($animated-gradient-end, .85) 75%, $animated-gradient-end, $animated-gradient-start 100%);
+      border-image-slice: 1;
+      animation: gradient-moving 6s linear infinite;
+    }
+  }
+  &.btn-success-ghost {
+    border-color: $success;
+    color: $success;
+    background: transparent;
+    &:before {
+      background: linear-gradient(140deg, #91E1D6 0%, #0DBDD1 100%);
+    }
+    &:hover, &:focus {
+      color: $white;
+      border-color: $success;
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+  &.btn-success {
+    border-color: $success;
+    color: $white;
+    background: linear-gradient(140deg, #91E1D6 0%, #0DBDD1 100%);
+    &:before {
+      background: linear-gradient(140deg, #91E1D6 0%, #0DBDD1 100%);
+      opacity: 1;
+    }
+    &:hover, &:focus {
+      color: $white;
+      background: linear-gradient(140deg, #91E1D6 0%, #0DBDD1 100%);
+    }
+  }
+  &.btn-long {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+}
+@keyframes gradient-moving {
+  from {
+   background-position: 0em 0;
+  }
+  to {
+    background-position: 140px 0;
+  }
+}

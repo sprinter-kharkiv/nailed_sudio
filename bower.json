@@ -1,0 +1,26 @@
+{
+  "name": "postcss",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Nagalsky Nikita <nagalsky.nikita@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Nagalsky/postCSS",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/assets/vendors/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.7",
+    "ScrollTrigger": "^0.3.3",
+    "masonry": "^4.1.1",
+    "slick-carousel": "^1.6.0"
+  }
+}
