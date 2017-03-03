@@ -1,0 +1,18 @@
+
+
+.add-margin {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.header_banner {
+  background: url("../images/temp/header_bg.jpg") no-repeat 0 50%, url("../images/temp/header_bg.jpg") no-repeat 100% 50%;
+  //background-size: cover;
+  .container {
+    background-color: rgba(0, 179, 238, 0.69);
+  }
+}
+.header_banner-img {
+  background-image: url('../images/temp/About_bg.jpg');
+  height: 400px;
+}

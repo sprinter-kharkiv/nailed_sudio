@@ -1,71 +1,58 @@
 /* FOOTER */
 
-$footer-border: $gallery;
+$footer_bg_color: #000;
+$footer_text_color: #fff;
+$footer_height: 125px;
+
+.bottom_nav {
+  ul {
+    text-align: right;
+    list-style: none;
+  }
+}
+
+.bottom_nav__item {
+  display: inline-block;
+  a {
+    padding: 0 15px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+  }
+  a.book_now {
+    color: #bd210f;
+  }
+}
+
+.bottom_nav.inverse {
+  .bottom_nav__item {
+    a {
+      color: #000;
+    }
+    a.book_now {
+      color: #2405bd;
+    }
+
+  }
+}
 
 .footer {
-  margin-top: 35px;
-  padding: 0px 0 50px 0;
-  @include respond-to(xs) {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-}
-.footer__inner {
-  border-top: 1px solid $footer-border;
-  padding-top: 10px;
-}
-
-.footer__top-holder, .footer__bottom-holder {
-  display: flex;
-  @include respond-to(xs) {
-    display: block;
-  }
-}
-
-.footer__top-holder {
-  margin-bottom: 10px;
-  @extend .flex-content-end;
-  @include respond-to(xs) {
-    margin-bottom: 20px;
-  }
-}
-.footer__bottom-holder {
-  @extend .flex-between, .flex-item-center;
-}
-
-.footer__form {
-  max-width: 300px;
-  width: 100%;
-  @include respond-to(xs) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.footer__item {
-  &+.footer__item {
-    @include respond-to(xs) {
-      margin-top: 15px;
+  height: $footer_height;
+  padding: 15px 25px 15px;
+  text-align: center;
+  color: $footer_text_color;
+  background-color: $footer_bg_color;
+  .copyright {
+    text-transform: uppercase;
+    a {
+      text-transform: none;
+      color: $footer_text_color;
+      &:hover {
+        text-decoration: underline;
+      }
     }
+
   }
 }
 
-.footer__nav, .footer__social {
-  @extend .list-unstyled, .list-inline;
-}
-.footer__nav-link {
-  font-size: 11px;
-  text-transform: uppercase;
-  color: $gray;
-  &:hover, &:focus {
-    color: $success;
-  }
-}
-.footer__social-link {
-  font-size: 20px;
-  text-transform: uppercase;
-  color: $dark;
-  &:hover, &:focus {
-    color: $success;
-  }
-}

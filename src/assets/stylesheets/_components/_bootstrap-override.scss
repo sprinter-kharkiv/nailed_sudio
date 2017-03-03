@@ -1,5 +1,11 @@
 /* BOOTSTRAP VARIABLES */
 
+@media (min-width: 1450px) {
+  .container {
+    width: 1404px;
+  }
+}
+
 .container--xs {
   @include respond-to(xs-min) {
     max-width: 620px;
