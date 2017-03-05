@@ -46,10 +46,10 @@ $body-color: $dove-gray;
 /*************************
 	Fonts variables
 *************************/
-$font-base: 'GothamRounded-Book';
-$font-book: 'GothamRounded-Book';
-$font-medium: 'GothamRounded-Medium';
-$font-secondary: 'PermanentMarker';
+$font-base: 'RobotoLight';
+$font-book: 'RobotoLight';
+$font-medium: 'RobotoLight';
+$font-secondary: 'RobotoBlack';
 
 
 $font-icons: 'fontello';
@@ -77,4 +77,10 @@ $link-color: $success;
 /*************************
 	Title variable
 *************************/
-$title-color: $mine-shaft;
+$title-color: #fff;
+$tile-bg-color: #000;
+
+/*************************
+	Contact section variable
+*************************/
+$contact-bg-color: #0d144b;

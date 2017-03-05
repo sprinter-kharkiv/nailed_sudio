@@ -14,11 +14,11 @@ $font-path: '../fonts/';
   font-style: normal;
 }
  
- [class^="inbrace-icon-"]:before, [class*=" inbrace-icon-"]:before {
+ [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: none;
+  //speak: none;
  
   display: inline-block;
   text-decoration: inherit;
@@ -33,7 +33,8 @@ $font-path: '../fonts/';
   -moz-osx-font-smoothing: grayscale;
 }
  
-.inbrace-icon-plus:before { content: '\e800'; } /* '' */
-.inbrace-icon-minus:before { content: '\e801'; } /* '' */
-.inbrace-icon-twitter:before { content: '\f099'; } /* '' */
-.inbrace-icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-plus:before { content: '\e800'; } /* '' */
+.icon-minus:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+

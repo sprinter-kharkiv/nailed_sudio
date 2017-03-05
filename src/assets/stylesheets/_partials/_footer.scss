@@ -4,21 +4,35 @@ $footer_bg_color: #000;
 $footer_text_color: #fff;
 $footer_height: 125px;
 
-.bottom_nav {
-  ul {
-    text-align: right;
-    list-style: none;
-  }
+.bottom_nav__wrap {
+  background-color: $contact-bg-color;
+}
+
+.bottom_nav__wrap .bottom_nav {
+  right: 15px;
+  text-align: right;
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
 }
 
 .bottom_nav__item {
   display: inline-block;
   a {
+    display: block;
     padding: 0 15px;
     color: #fff;
     height: 50px;
+    font-family: $font-secondary;
+    font-size: 24px;
     line-height: 50px;
     font-weight: bold;
+    @include respond-to(sm) {
+      font-size: 18px;
+    }
+    @include respond-to(xs) {
+      font-size: 14px;
+    }
   }
   a.book_now {
     color: #bd210f;
@@ -39,11 +53,12 @@ $footer_height: 125px;
 
 .footer {
   height: $footer_height;
-  padding: 15px 25px 15px;
+  padding-top: 25px;
   text-align: center;
   color: $footer_text_color;
   background-color: $footer_bg_color;
   .copyright {
+    margin-top: 10px;
     text-transform: uppercase;
     a {
       text-transform: none;
@@ -55,4 +70,6 @@ $footer_height: 125px;
 
   }
 }
+.footer__logo {
 
+}

@@ -1,5 +1,30 @@
 /* SECTION */
 
+.add-margin {
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+  @include respond-to(md) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @include respond-to(xs) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.section-title {
+  width: 320px;
+  height: 50px;
+  margin: 0 auto;
+  background: $tile-bg-color;
+  color: $title-color;
+  line-height: 50px;
+  text-align: center;
+  box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.67);
+}
+
 .section {
   position: relative;
   padding: 90px 0px;

@@ -2,30 +2,19 @@
 
 $font-path: '../fonts/';
 
-//GothamRounded font
 @font-face {
-  font-family: 'GothamRounded-Book';
+  font-family: 'RobotoLight';
   font-style: normal;
   font-weight: normal;
-  src: url('#{$font-path}GothamRounded/GothamRounded-Book.woff2') format('woff2'),
-       url('#{$font-path}GothamRounded/GothamRounded-Book.woff') format('woff'),
-       url('#{$font-path}GothamRounded/GothamRounded-Book.ttf') format('ttf');
+  src: url('#{$font-path}RobotoLight/roboto-light-webfont.woff2') format('woff2'),
+  url('#{$font-path}RobotoLight/roboto-light-webfont.woff') format('woff'),
+  url('#{$font-path}RobotoLight/Roboto-Light.ttf') format('ttf');
 }
 @font-face {
-  font-family: 'GothamRounded-Medium';
+  font-family: 'RobotoBlack';
   font-style: normal;
   font-weight: normal;
-  src: url('#{$font-path}GothamRounded/GothamRounded-Medium.woff2') format('woff2'),
-       url('#{$font-path}GothamRounded/GothamRounded-Medium.woff') format('woff'),
-       url('#{$font-path}GothamRounded/GothamRounded-Medium.ttf') format('ttf');
-}
-
-//PermanentMarker font
-@font-face {
-  font-family: 'PermanentMarker';
-  font-style: normal;
-  font-weight: normal;
-  src: url('#{$font-path}Permanent-marker/PermanentMarker.woff2') format('woff2'),
-       url('#{$font-path}Permanent-marker/PermanentMarker.woff') format('woff'),
-       url('#{$font-path}Permanent-marker/PermanentMarker.ttf') format('ttf');
+  src: url('#{$font-path}RobotoBlack/roboto-black-webfont.woff2') format('woff2'),
+  url('#{$font-path}RobotoBlack/roboto-black-webfont.woff') format('woff'),
+  url('#{$font-path}RobotoBlack/Roboto-black.ttf') format('ttf');
 }

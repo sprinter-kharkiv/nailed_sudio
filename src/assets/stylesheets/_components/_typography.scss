@@ -8,16 +8,6 @@ html, body {
 	line-height: $body-line-height;
 }
 
-body {
-	@extend .flex, .flex-column;
-	min-height: 100vh;
-	@include respond-to(xs) {
-		font-size: $body-font-size-xs;
-	}
-}
-.content-holder {
-	flex: 1;
-}
 
 
 

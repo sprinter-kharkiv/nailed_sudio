@@ -8,7 +8,7 @@ var gulp                   = require('gulp'),
     pump                   = require('pump'),
     rigger                 = require('gulp-rigger'),
     imagemin               = require('gulp-imagemin'),
-    //imageminJpegRecompress = require('imagemin-jpeg-recompress'),
+    imageminJpegRecompress = require('imagemin-jpeg-recompress'),
     imageminSvgo           = require('gulp-imagemin').svgo,
     imageminPngquant       = require('imagemin-pngquant'),
   	browserSync            = require('browser-sync').create(),
@@ -20,7 +20,7 @@ var path = {
     build: {
     	html: 'dist/',
         stylesheets: 'dist/assets/stylesheets/',
-  //      img: 'dist/assets/images/',
+        img: 'dist/assets/images/',
         javascript: 'dist/assets/javascript/',
         fonts: 'dist/assets/fonts/',
         vendors: 'dist/assets/vendors/'
@@ -36,7 +36,7 @@ var path = {
     watch: {
         html: 'src/**/*.html',
         stylesheets: 'src/assets/stylesheets/**/*.scss',
-   //     img: 'src/assets/images/**/*.*',
+        img: 'src/assets/images/**/*.*',
         javascript: 'src/assets/javascript/**/*.js',
         fonts: 'src/assets/fonts/**/*.*',
         vendors: 'src/assets/vendors/**/*.*'
@@ -96,12 +96,12 @@ gulp.task('vendors:build', task.vendors = function () {
       stream: true
     }));
 });
-/*
+
 //Images
 gulp.task('img:build', task.img = function () {
 	gulp.src(path.src.img)
     .pipe(imagemin([
-//        imageminJpegRecompress({quality: 'low'}),
+        imageminJpegRecompress({quality: 'low'}),
         imageminSvgo(),
         imageminPngquant({nofs: true, speed: 1})
     ]))
@@ -110,7 +110,7 @@ gulp.task('img:build', task.img = function () {
       stream: true
     }));
 });
-*/
+
 
 // Server
 gulp.task('server:build', function() {
