@@ -45,5 +45,17 @@
     max-width: 100%;
     min-height: 100%;
   }
+   @include respond-to(sm) {
+      width: 32%;
+       padding-bottom: 32%;
+      margin-right: 2%;
+       &:nth-child(3n) {
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+       &:nth-child(12) {
+    margin-bottom: 0;
+  }
+    }
 }
 
