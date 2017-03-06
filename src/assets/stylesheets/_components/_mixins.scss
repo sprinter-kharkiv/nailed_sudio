@@ -4,6 +4,9 @@
   @if $media == xs-small {
     @media only screen and (max-width: 450px) { @content; }
   }
+  @if $media == xs-add {
+    @media only screen and (max-width: 500px) { @content; }
+  }
   @if $media == xs {
     @media only screen and (max-width: $screen-xs-max) { @content; }
   }

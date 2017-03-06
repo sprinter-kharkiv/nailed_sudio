@@ -1,0 +1,36 @@
+
+/* BRANDS */
+
+.brands_block {
+  height: 220px;
+  margin-top: 20px;
+}
+
+.brands_block .add-margin {
+  //background-color: #ccc;
+}
+.brands_block__item {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  vertical-align: middle;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  img {
+    width: 100%;
+  }
+  a {
+    display: block;
+    padding: 2px;
+    transition: transform .3s ease;
+    overflow: hidden;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.brands_descr {
+  margin-top: 20px;
+  text-align: center;
+}

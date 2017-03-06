@@ -2,6 +2,7 @@
 .about_describe-text {
   text-align: justify;
 }
+
 .about_describe {
   padding-top: 85px;
   padding-bottom: 140px;
@@ -12,16 +13,18 @@
   padding: 0;
   margin-bottom: 40px;
   background: #233323;
-  >div {
+  > div {
     background: #233323;
   }
 }
+
 .about_slider__img {
   float: left;
   width: 50%;
   padding-bottom: 40%;
   background: #0DBDD1;
 }
+
 .about_slider__desc {
   float: left;
   width: 50%;
@@ -30,25 +33,119 @@
   color: #fff
   //background: #87d188;
 }
-.slick-dots {
-  position: absolute;
-  bottom: -45px;
-  list-style: none;
-  >li {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin: 12px 15px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #ccc;
-    >button {
-      background: transparent;
-      color: transparent;
-      border: none;
+
+.studio_slider {
+  .slick-dots {
+    position: absolute;
+    bottom: -45px;
+    list-style: none;
+    > li {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin: 12px 15px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #ccc;
+      > button {
+        background: transparent;
+        color: transparent;
+        border: none;
+      }
+    }
+    .slick-active {
+      background-color: #000000;
     }
   }
-  .slick-active {
-    background-color: #000000;
+}
+
+.our_team {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  //background-color: #ccc;
+  .slick-slider {
+    position: relative;
+    .slick-track {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -65px;
+    height: 90px;
+    width: 40px;
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 5;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 62px;
+      left: -4px;
+      width: 50px;
+      height: 4px;
+      background: #000;
+      transform: rotateZ(60deg);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: -4px;
+      width: 50px;
+      height: 4px;
+      background: #000;
+      transform: rotateZ(120deg);
+    }
+    &.slick-prev {
+      left: 50px;
+    }
+    &.slick-next {
+      right: 50px;
+      &:before {
+        top: 20px;
+        left: -4px;
+      }
+      &:after {
+        top: 62px;
+        left: -4px;
+      }
+    }
+  }
+}
+.team_slider__item {
+  width: 25%;
+  margin-right: 1%;
+  //background-color: #00b3ee;
+  .img_wrap {
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    img {
+      position: absolute;
+      max-height: 100%;
+    }
+  }
+  .name {
+    display: none;
+    height: 50px;
+    text-align: center;
+    color: #000;
+  }
+  &.slick-active {
+    //background-color: #ee4a61;
+    .name {
+      display: block;
+    }
+  }
+  &.slick-center {
+    .img_wrap {
+      transform: scale(1.2);
+    }
   }
 }

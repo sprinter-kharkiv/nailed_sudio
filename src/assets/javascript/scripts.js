@@ -44,6 +44,34 @@ $(document).ready(function () {
         arrows: false,
         dots: true
     });
+    $('.team_slider').slick({
+        centerMode: true,
+        centerPadding: '160px',
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '60px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '20px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
 
 
     $('.grid-floatet__carousel').slick({
