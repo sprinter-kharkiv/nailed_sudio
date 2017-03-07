@@ -11,8 +11,13 @@
     margin-left: -160px;
     content: '';
     width: 320px;
-    height: 10px;
+    height: 8px;
     background-color: $tile-bg-color;
+    @include respond-to(xs) {
+      margin-left: -80px;
+      width: 160px;
+      height: 4px;
+    }
   }
 }
 

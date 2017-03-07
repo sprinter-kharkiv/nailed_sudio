@@ -36,6 +36,10 @@ $footer_height: 125px;
     @include respond-to(xs) {
       font-size: 14px;
     }
+    @include respond-to(xs-add) {
+      height: 30px;
+      line-height: 30px;
+    }
   }
 }
 

@@ -1,4 +1,7 @@
 
+/*-----------------------------------
+      S T U D I O    S L I D E R
+-----------------------------------*/
 .about_describe-text {
   text-align: justify;
 }
@@ -12,17 +15,31 @@
   //height: 500px;
   padding: 0;
   margin-bottom: 40px;
-  background: #233323;
+  //background: #233323;
   > div {
-    background: #233323;
+    background: #000000;
   }
 }
 
 .about_slider__img {
+  position: relative;
   float: left;
   width: 50%;
   padding-bottom: 40%;
   background: #0DBDD1;
+  overflow: hidden;
+  @include respond-to(xs) {
+    width: 100%;
+    padding-bottom: 60%;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    max-width: 100%;
+    min-height: 100%;
+  }
 }
 
 .about_slider__desc {
@@ -30,8 +47,17 @@
   width: 50%;
   padding: 40px;
   text-align: center;
-  color: #fff
-  //background: #87d188;
+  @include respond-to(xs) {
+    width: 100%;
+    padding: 40px 10px 20px;
+  }
+  p {
+    font-size: 18px;
+    color: #fff;
+    @include respond-to(sm) {
+      font-size: 14px;
+    }
+  }
 }
 
 .studio_slider {
@@ -58,11 +84,15 @@
     }
   }
 }
-
+/*---------------------------
+    T E A M   S L I D E R
+-------------------------------*/
 .our_team {
   margin-top: 50px;
   margin-bottom: 50px;
-  //background-color: #ccc;
+  @include respond-to(xs-small) {
+    margin-bottom: 5px;
+  }
   .slick-slider {
     position: relative;
     .slick-track {
@@ -94,37 +124,37 @@
       transform: rotateZ(60deg);
     }
     &:hover:before {
-        background: $slider-arrow-hover-color;
-        transform: rotateZ(50deg);
-        }  
+      background: $slider-arrow-hover-color;
+      transform: rotateZ(50deg);
+    }
     &:after {
-        top: 43px;
-      //border-radius: 0 3px 3px 3px;
+      top: 43px;
       transform-origin: 0 0;
       transform: rotateZ(-60deg);
     }
     &:hover:after {
-        background: $slider-arrow-hover-color;
-        transform: rotateZ(-50deg);
-      }
+      background: $slider-arrow-hover-color;
+      transform: rotateZ(-50deg);
+    }
     &.slick-prev {
       left: 50px;
     }
     &.slick-next {
       right: 50px;
       &:before {
-          transform-origin: 100% 0;
-        top:  43px;
+        transform-origin: 100% 0;
+        top: 43px;
         left: -4px;
       }
       &:after {
-          transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
         top: 36px;
         left: -4px;
       }
     }
   }
 }
+
 .team_slider__item {
   width: 25%;
   margin-right: 1%;
@@ -156,7 +186,7 @@
       transform: scale(1.2);
     }
     .name {
-          color: $slider-arrow-hover-color;
-      }  
+      color: $slider-arrow-hover-color;
+    }
   }
 }
