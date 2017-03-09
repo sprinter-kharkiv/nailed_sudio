@@ -1,51 +1,54 @@
 /* NAVBAR */
 
-$navbar-bg: #ccc;
-$navbar-height: 215px;
-$navbar-height-xs: 50px;
-$navbar-letter-spacing: 1.4px;
+$navbar-bg: #fff;
 $nav-link: #000;
 
 .navbar {
   background: $navbar-bg;
   border-radius: 0;
   margin-bottom: 0;
+  padding-top: 92px;
+  padding-bottom: 20px;
   border: none;
   text-transform: uppercase;
-  min-height: $navbar-height;
+  @include respond-to(md) {
+    padding-top: 25px;
+  }
   @include respond-to(xs) {
-    min-height: $navbar-height-xs;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
-
 .navbar-nav {
   @include respond-to(sm-min) {
-    letter-spacing: $navbar-letter-spacing;
+    letter-spacing: 1.4px;
   }
-  >li {
+  > li {
     &.active {
-      >a {
-          background: transparent;
-          color: $success;
+      > a {
+        background: transparent;
+        color: $success;
       }
     }
-    >a {
+    > a {
+      display: block;
+      height: 48px;
       color: $nav-link;
-      font-size: 26px;
+      font-size: 22px;
+      line-height: 48px;
       font-weight: bold;
-      padding: 28px 15px;
+      padding: 0 15px;
       text-transform: none;
       @include respond-to(md) {
-        padding: 28px 10px;
+        padding: 0 10px;
       }
       @include respond-to(sm) {
-        padding: 28px 6px;
-        font-size: 12px;
+        font-size: 14px;
       }
       @include respond-to(xs) {
-        padding: 7.5px 15px;
-        font-size: 14px;
+        padding: 0 15px;
+        font-size: 18px;
       }
       &:hover, &:focus {
         background: transparent;
@@ -60,11 +63,13 @@ $nav-link: #000;
     }
   }
 }
+
 .navbar-right {
   @include respond-to(xs-min) {
     margin-right: 0;
   }
 }
+
 .navbar-btn {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -80,7 +85,6 @@ $nav-link: #000;
   }
 }
 
-
 .navbar-brand {
   width: 150px;
   font-size: 25px;
@@ -95,11 +99,13 @@ $nav-link: #000;
     height: 50px
   }
 }
+
 .navbar-brand--centered {
   float: none;
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
 .navbar-logo {
   width: 100%;
   display: block;
@@ -108,9 +114,76 @@ $nav-link: #000;
     font-family: $font-book;
   }
 }
+
 .navbar-toggle {
   margin-top: 7px;
-  >.icon-bar {
+  > .icon-bar {
     background: rgba($success, .75);
+  }
+}
+
+.social_wrapper {
+  float: right;
+  .book_now {
+    display: block;
+    padding: 0 35px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: none;
+    font-weight: bold;
+    color: #fff;
+    background: $contact-bg-color;
+    @include respond-to(xs) {
+      padding: 0 15px;
+      height: 36px;
+      font-size: 14px;
+      line-height: 36px;
+    }
+  }
+}
+
+.header__social {
+  width: 100%;
+  min-width: 125px;
+  padding: 0;
+  margin-top: 16px;
+  list-style: none;
+  text-align: justify;
+  li:nth-child(1) {
+    float: left;
+  }
+  li:nth-child(3) {
+    width: 38px;
+    margin: 0 auto;
+  }
+  li:nth-child(2) {
+    float: right;
+  }
+  @include respond-to(xs) {
+    min-width: 100px;
+    li:nth-child(3) {
+      width: 30px;
+    }
+  }
+
+}
+
+.header__social-link {
+  display: block;
+  width: 38px;
+  height: 38px;
+  background: #000;
+  font-size: 18px;
+  line-height: 38px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  @include respond-to(xs) {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
   }
 }
