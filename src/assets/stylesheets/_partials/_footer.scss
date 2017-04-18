@@ -8,6 +8,10 @@ $footer_height: 125px;
   background-color: $contact-bg-color;
 }
 
+.bottom_nav__wrap.inverse {
+  background-color: #fff;
+}
+
 .bottom_nav__wrap .bottom_nav {
   float: right;
   text-align: center;
@@ -105,3 +109,6 @@ $footer_height: 125px;
   }
 }
 
+.bottom_nav__wrap .bottom_nav.inverse {
+  margin-top: 5px;
+}

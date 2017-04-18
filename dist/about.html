@@ -1,156 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-	<title>About page</title>
-	<link rel="stylesheet" href="assets/stylesheets/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png">
+
+    <title>About</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
 </head>
 
 <body>
 
-	<nav class="navbar navbar-fixed-top">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="#">
-	        <svg xmlns="http://www.w3.org/2000/svg" class="navbar-logo" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="" height="26px">
-					  <text x="50%" text-anchor="middle" y="88%" dy="" fill="url(#pattern)"><tspan>IN</tspan>BRACE</text>
-					  <defs>
-					    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0">
-	              <stop offset="0%" style="stop-color:#0DBDD1;"/>
-					      <stop offset="15%" style="stop-color:#64DDD9;"/>
-								<stop offset="50%" style="stop-color:#FF7F90;"/>
-	              <stop offset="75%" style="stop-color:#FFD39F;"/>
-					      <stop offset="100%" style="stop-color:#0DBDD1;"/>
-					    </linearGradient>
-					    
-					    <pattern id="pattern" x="0" y="0" width="300%" height="100%" patternUnits="userSpaceOnUse">
-								<rect x="0" y="0" width="150%" height="100%" fill="url(#gradient)">
-	        				<animate attributeType="XML" attributeName="x" from="0" to="150%" dur="12s" repeatCount="indefinite"/>
-	      				</rect>
-					      <rect x="-150%" y="0" width="150%" height="100%" fill="url(#gradient)">
-					        <animate attributeType="XML" attributeName="x" from="-150%" to="0" dur="12s" repeatCount="indefinite"/>
-					      </rect>
-					    </pattern>
-					  </defs>
-					</svg>
-	      </a>
-	    </div><!-- navbar-header -->
-	
-	    <div class="collapse navbar-collapse" id="navbar-collapse">
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">FOR PATIENT</a></li>
-	        <li><a href="#">FOR PROVIDER</a></li>
-	        <li><a href="#">ABOUT US</a></li>
-	        <li><a href="#">CONTACT US</a></li>
-	        <li><a href="#">LOGIN</a></li>
-	        <li><button class="btn btn-success navbar-btn">STAY IN TOUCH</button></li>
-	      </ul><!-- navbar-nav -->
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container -->
-	</nav><!-- navbar -->
+<nav class="navbar !navbar-fixed-top">
+    <div class="container">
+        <div class="social_wrapper">
+            <a href="#" class="book_now">book now</a>
+            <ul class="header__social">
+                <li class="header__social-item"><a href="#" class="header__social-link"><i
+                        class="icon-instagram"></i></a></li>
+                <li class="header__social-item"><a href="#" class="header__social-link"><i
+                        class="icon-twitter"></i></a></li>
+                <li class="header__social-item"><a href="#" class="header__social-link"><i
+                        class="icon-facebook"></i></a></li>
+            </ul>
+        </div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo_blue.png" class="navbar-logo">
+            </a>
+        </div><!-- navbar-header -->
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="about.html">about us</a></li>
+                <li><a href="services.html">servises</a></li>
+                <li><a href="home.html">our studio</a></li>
+                <li class="active"><a  href="contact.html">contact us</a></li>
+            </ul><!-- navbar-nav -->
+        </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container -->
+</nav><!-- navbar -->
 
 
-	<main class="content-holder">
-		
-		<section class="section section--below-nav text-center">
-			<div class="container container--xs">
-				<h1 class="h3 title">Our Mission</h1>
-				<p>Swift Health Systems was founded nearly half a decade ago by a team of Orthodontists, Engineers, Biologists, Computer Scientists, Advanced Manufacturing Experts and experienced Executives with a mission to redefine the orthodontic treatment experience for patients and orthodontists alike. For patients: an enhanced experience that let’s you freely enjoy the benefits of your straightening teeth. For orthodontists: a treatment solution that drives practice development.  For our investors a clear solution to create tangible value to all of our customers. Swift Health Systems is supported by an investment team with deep experience in venture capital, consumer marketing, branding, and orthodontic thought leadership.</p>
-			</div><!-- container -->
-			
-			<div class="divider divider--huge"></div>
-			
-			<div class="container container">
-				<h3 class="title">Advisors</h3>
-				<div class="row text-center">
-					<div class="col-sm-4">
-						<div class="content-item">
-							<img src="assets/images/temp/user.png" class="img-content img-responsive img-circle center-block" alt="">
-							<p>
-								<b>Dr. Ronald Redmond</b><br>
-								CEO of the Schulman Study Group
-							</p>
-						</div><!-- content-item -->
-					</div><!-- col -->
-					
-					<div class="col-sm-4">
-						<img src="assets/images/temp/user.png" class="img-content img-responsive img-circle center-block" alt="">
-						<p>
-							<b>Dr. Glenn T. Sameshima</b><br>
-							Chairman and Program Director of the Advanced Orthodontic Program at the Herman Ostrow School of Dentistry of the University of Southern California
-						</p>
-					</div><!-- col -->
-					
-					<div class="col-sm-4">
-						<img src="assets/images/temp/user.png" class="img-content img-responsive img-circle center-block" alt="">
-						<p>
-							<b>Dr. Glenn T. Sameshima</b><br>
-							Chairman and Program Director of the Advanced Orthodontic Program at the Herman Ostrow School of Dentistry of the University of Southern California
-						</p>
-					</div><!-- col -->
-				</div><!-- row -->
-			</div><!-- container -->
-		</section><!-- section -->
-		
-		
-		
-		
+<main class="content-holder">
+    <!-- header_banner -->
+    <section class="header_banner">
+        <div class="container">
+            <div class="row">
+                <div class="no_padding_m col-xs-12">
+                    <div class="header_banner-img section--has-bg add-margin" style="background-image: url(assets/images/bg/about_bg.jpg);">
+                        <img src="assets/images/bg/about_bg_text.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end header_banner -->
+    <!-- about_describe -->
+    <section class="about_describe">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h3>Perfect quality. Perfect style. Personal approach.</h3>
 
-	</main><!-- content-holder -->
+                    <p class="about_describe-text">GET NAILED is a high-design nail studio founded by Karina, a beauty
+                        blogger. The studio’s goal is to transcend and transform every aspect of the traditional
+                        manicure experience. GET NAILED offers a seasonal collection of thoughtfully-edited nail designs
+                        and colors reminiscent of runway and editorial trends to discerning women seeking edgy
+                        elegance. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about_describe -->
+    <!-- about_slider -->
+    <section class="studio_slider">
+        <div class="container">
+                <div class="section-title">Our Studio</div>
+                    <div class="about_slider add-margin">
+                        <div class="clearfix">
+                            <div class="about_slider__img">
+                                <img src="assets/images/studio_slider_1.jpg" alt="">
+                            </div>
+                            <div class="about_slider__desc">
+                                <p>GET NAILED located in a heart of Barcelona, next to Sagrada Familia.</p>
+
+                                <p> We will be happy see u soon in our studio and present all our works.</p>
+                                <p>Green tea, coffee and vegan cakes are always available for GET NAILED clients.</p>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="about_slider__img">
+                                <img src="assets/images/studio_slider_1.jpg" alt="">
+                            </div>
+                            <div class="about_slider__desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi, eligendi
+                                    exercitationem ipsam iste molestias necessitatibus</p>
+
+                                <p> obcaecati odio perferendis
+                                    praesentium provident quae quibusdam quo repellat repudiandae soluta, unde,
+                                    veritatis vitae.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </section>
+    <!-- end about_slider -->
+    <!-- our team -->
+    <section class="our_team">
+        <div class="section-title">Our Team</div>
+        <div class="team_slider">
+            <div class="team_slider__item">
+                <div class="img_wrap"><img src="assets/images/team/team_2_colored.jpg" alt=""></div>
+                <div class="name"><b>Maria</b><br><span>manicure master</span></div>
+            </div>
+            <div class="team_slider__item">
+                <div class="img_wrap"><img src="assets/images/team/team_2_colored.jpg" alt=""></div>
+                <div class="name"><b>Maria</b><br><span>manicure master</span></div>
+            </div>
+            <div class="team_slider__item">
+                <div class="img_wrap"><img src="assets/images/team/team_2_colored.jpg" alt=""></div>
+                <div class="name"><b>Maria</b><br><span>manicure master</span></div>
+            </div>
+            <div class="team_slider__item">
+                <div class="img_wrap"><img src="assets/images/team/team_2_colored.jpg" alt=""></div>
+                <div class="name"><b>Maria</b><br><span>manicure master</span></div>
+            </div>
+            <div class="team_slider__item">
+                <div class="img_wrap"><img src="assets/images/team/team_2_colored.jpg" alt=""></div>
+                <div class="name"><b>Maria</b><br><span>manicure master</span></div>
+            </div>
 
 
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__inner">
-				<div class="footer__top-holder">
-					<form action="" class="footer__form">
-						<legend class="text-upprecase">SIGN UP FOR OUR NEWSLETTER</legend>
-						<div class="form-group">
-							<input type="email" class="form-control form-control-md">
-						</div><!-- form-group -->
-					</form>
-				</div><!-- footer__top-holder -->
-				
-				<div class="footer__bottom-holder">
-					<div class="footer__item">
-						<ul class="footer__nav">
-							<li class="footer__nav-item"><a href="#" class="footer__nav-link">PRIVACY POLICY</a></li>
-							<li class="footer__nav-item"><a href="#" class="footer__nav-link">TERMS OF USE</a></li>
-						</ul><!-- footer__nav -->
-					</div><!-- footer__item -->
-					
-					<div class="footer__item">
-						<ul class="footer__social">
-							<li class="footer__social-item"><a href="#" class="footer__social-link"><i class="inbrace-icon-facebook"></i></a></li>
-							<li class="footer__social-item"><a href="#" class="footer__social-link"><i class="inbrace-icon-twitter"></i></a></li>
-						</ul><!-- footer__social -->
-					</div><!-- footer__item -->
-				</div><!-- footer__bottom-holder -->
-			</div><!-- footer__inner -->
-		</div><!-- container -->
-	</footer>
+        </div>
+    </section>
+    <!-- end our team -->
+
+    <section class="studio">
+        <div class="section-title">Get naled studio</div>
+        <div class="studio_wrap">
+            <div class="container">
+                <div class="studio_item">
+                    <img src="assets/images/studios/studios_1.jpg" alt="">
+                </div>
+                <div class="studio_item">
+                    <img src="assets/images/studios/studios_2.jpg" alt="">
+                </div>
+                <div class="studio_item">
+                    <img src="assets/images/studios/studios_3.jpg" alt="">
+                </div>
+                <div class="studio_item">
+                    <img src="assets/images/studios/studios_4.jpg" alt="">
+                </div>
+                <div class="studio_item">
+                    <img src="assets/images/studios/studios_5.jpg" alt="">
+                </div>
+                <div class="studio_item">
+                    <img src="assets/images/studios/studios_6.jpg" alt="">
+                </div>
+                <div class="studio_item">
+                    <img src="assets/images/studios/studios_7.jpg" alt="">
+                </div>
+                <div class="studio_item">
+                    <img src="assets/images/studios/studios_8.jpg" alt="">
+                </div>
+                <div class="studio_item">
+                    <img src="assets/images/studios/studios_9.jpg" alt="">
+                </div>
+                <div class="studio_item">
+                    <img src="assets/images/studios/studios_10.jpg" alt="">
+                </div>
+                <div class="studio_item">
+                    <img src="assets/images/studios/studios_11.jpg" alt="">
+                </div>
+                <div class="studio_item">
+                    <img src="assets/images/studios/studios_12.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-	<script src="assets/vendors/jquery/dist/jquery.min.js"></script>
-	<script src="assets/vendors/ScrollTrigger/ScrollTrigger.min.js"></script>
-	<script src="assets/vendors/slick-carousel/slick/slick.min.js"></script>
-	<script src="assets/vendors/masonry/dist/masonry.pkgd.min.js"></script>
-	<script src="assets/vendors/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-	<script src="assets/javascript/scripts.js"></script>
-	
-	
 
+
+    <section class="brands_block container">
+        <div class="add-margin clearfix">
+            <div class="brands_block__item">
+                <a href="#">
+                    <img src="assets/images/brand-1.jpg" alt="">
+                </a>
+            </div>
+            <div class="brands_block__item">
+                <a href="#">
+                    <img src="assets/images/brand-2.jpg" alt="">
+                </a>
+            </div>
+            <div class="brands_block__item">
+                <a href="#">
+                    <img src="assets/images/brand-3.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="brands_descr">Collaborating with brands.</div>
+    </section>
+
+</main><!-- content-holder -->
+
+
+<section id="contact" >
+    <div class="section-title">contact us</div>
+    <div class="contact_block">
+    <div class="container">
+        <div class="add-margin clearfix">
+            <div class="contact_block__wrap">
+                <div class="clearfix">
+                    <div id="map" class="contact_block__map">
+                        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d41038.026069204905!2d36.24153606671177!3d49.9949224115113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1488708284136"
+                                frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                    </div>
+
+
+                    <div class="contact-info">
+                        <p>Barcelona, Spain<br>
+                            Get Directions<br>
+                            @getnailedbykarina<br>
+                            Message Now<br>
+                            Call <a href="tel:+33601643650">+33 6 01 64 36 50</a></p>
+                    </div>
+                    <ul class="contact_block__social">
+                        <li class="contact__social-item"><a href="#" class="contact__social-link"><i
+                                class="icon-facebook"></i></a></li>
+                        <li class="contact__social-item"><a href="#" class="contact__social-link"><i
+                                class="icon-twitter"></i></a></li>
+                    </ul>
+                </div>
+
+                <form action="" class="contact_block__form clearfix">
+                    <div class="form_group">
+                        <textarea name="message" placeholder="Message"></textarea>
+                        <input type="text" class="form-control form-control-md" placeholder="Name"required>
+                        <input type="email" class="form-control form-control-md" placeholder="Email address" required>
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- container -->
+    </div><!-- contact_block -->
+</section>
+
+<section class="bottom_nav__wrap">
+    <div class="container">
+        <ul class="bottom_nav !inverse add-margin">
+            <li class="bottom_nav__item"><a href="#">about us</a></li>
+            <li class="bottom_nav__item"><a href="#">servises</a></li>
+            <li class="bottom_nav__item"><a href="#">poducts</a></li>
+            <li class="bottom_nav__item"><a href="#">contact us</a></li>
+            <li class="bottom_nav__item book_now"><a href="#">book now</a></li>
+        </ul>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__logo">
+            <a href="#">
+                <img src="assets/images/logo_white.png" alt="">
+            </a>
+        </div>
+        <div class="copyright">copyright 2017 <a href="#">www.getnaled.co</a>
+            <div>all rights reserved</div>
+        </div>
+    </div><!-- container -->
+</footer>
+<script>
+    function initMap() {
+        var uluru = {lat: 41.409162, lng: 2.182802};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 17,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+
+
+</script>
+<script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+<script src="assets/vendors/ScrollTrigger/ScrollTrigger.min.js"></script>
+<script src="assets/vendors/slick-carousel/slick/slick.min.js"></script>
+<script src="assets/vendors/masonry/dist/masonry.pkgd.min.js"></script>
+<script src="assets/vendors/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+<script src="assets/javascript/scripts.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt4OJbv9MGtbHjNIoDL4V3rR2d6YL_TBw&callback=initMap"
+        async defer></script>
 
 
 </body>

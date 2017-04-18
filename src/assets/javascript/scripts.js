@@ -32,13 +32,22 @@ $(document).ready(function () {
         event.preventDefault();
         $(this).toggleClass('active');
         $('.collapsed-holder').slideToggle(500);
-    })
+    });
 
     /* Masonry grid initial */
     mansoryGrid();
 
 
     /* Slick carousel initial */
+
+    $('.home_slider').slick({
+        arrows: true,
+        dots: false
+    });
+    $('.services_item__slider').slick({
+        arrows: false,
+        dots: true
+    });
 
     $('.about_slider').slick({
         arrows: false,
@@ -125,6 +134,8 @@ $(document).ready(function () {
             $(this).closest('.form-group').removeClass('filled');
         }
     });
+
+
 
 
 });

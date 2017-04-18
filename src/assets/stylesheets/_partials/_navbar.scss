@@ -86,33 +86,28 @@ $nav-link: #000;
 }
 
 .navbar-brand {
-  width: 150px;
-  font-size: 25px;
-  padding: 23px 15px;
-  height: 76px;
+  width: 340px;
+  padding: 0;
+  margin-top: -25px;
+  //padding: 23px 15px;
+  //height: 76px;
+  @include respond-to(md) {
+    width: 260px;
+    //padding-bottom: 23px;
+  }
   @include respond-to(sm) {
-    padding-top: 23px;
-    padding-bottom: 23px;
+    width: 200px;
+    margin-top: 5px;
   }
   @include respond-to(xs) {
-    padding: 10px 15px;
-    height: 50px
+    width: 120px;
+    margin-left: 10px;
   }
-}
-
-.navbar-brand--centered {
-  float: none;
-  margin-left: auto !important;
-  margin-right: auto !important;
 }
 
 .navbar-logo {
   width: 100%;
   display: block;
-  font-family: $font-medium;
-  tspan {
-    font-family: $font-book;
-  }
 }
 
 .navbar-toggle {

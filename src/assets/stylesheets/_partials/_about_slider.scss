@@ -2,14 +2,7 @@
 /*-----------------------------------
       S T U D I O    S L I D E R
 -----------------------------------*/
-.about_describe-text {
-  text-align: justify;
-}
 
-.about_describe {
-  padding-top: 85px;
-  padding-bottom: 140px;
-}
 
 .about_slider {
   //height: 500px;
@@ -37,21 +30,29 @@
     top: 0;
     left: 0;
     display: block;
-    max-width: 100%;
+    width: 100%;
     min-height: 100%;
+    @include respond-to(xs) {
+      top: 50%;
+      margin-top: -50%;
+    }
   }
 }
 
 .about_slider__desc {
   float: left;
   width: 50%;
-  padding: 40px;
+  padding: 100px 30px 20px;
   text-align: center;
   @include respond-to(xs) {
     width: 100%;
     padding: 40px 10px 20px;
   }
+  @include respond-to(sm) {
+    padding: 60px 25px 20px;
+  }
   p {
+    font-family: $font-medium;
     font-size: 18px;
     color: #fff;
     @include respond-to(sm) {
@@ -60,19 +61,25 @@
   }
 }
 
-.studio_slider {
+.studio_slider, .services_item__slider {
   .slick-dots {
     position: absolute;
+    width: 50%;
+    margin-left: -25%;
+    padding: 0;
+    left: 50%;
     bottom: -45px;
     list-style: none;
+
+    text-align: center;
     > li {
       display: inline-block;
       width: 16px;
       height: 16px;
-      margin: 12px 15px;
+      margin: 17px 7px;
       border-radius: 50%;
       overflow: hidden;
-      background-color: #ccc;
+      background-color: #dadada;
       > button {
         background: transparent;
         color: transparent;
@@ -102,56 +109,57 @@
     }
 
   }
-  .slick-arrow {
+
+}
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -65px;
+  height: 90px;
+  width: 60px;
+  color: transparent;
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 5;
+  &:before, &:after {
+    content: '';
     position: absolute;
-    top: 50%;
-    margin-top: -65px;
-    height: 90px;
-    width: 60px;
-    color: transparent;
-    background-color: transparent;
-    border-color: transparent;
-    z-index: 5;
-    &:before, &:after {
-      content: '';
-      position: absolute;
-      top: 36px;
-      left: 16px;
-      width: 50px;
-      height: 6px;
-      border-radius: 3px;
-      background: $slider-arrow-color;
-      transform-origin: 0 100%;
-      transform: rotateZ(60deg);
-    }
-    &:hover:before {
-      background: $slider-arrow-hover-color;
-      transform: rotateZ(50deg);
+    top: 36px;
+    left: 16px;
+    width: 50px;
+    height: 6px;
+    border-radius: 3px;
+    background: $slider-arrow-color;
+    transform-origin: 0 100%;
+    transform: rotateZ(60deg);
+  }
+  &:hover:before {
+    background: $slider-arrow-hover-color;
+    transform: rotateZ(50deg);
+  }
+  &:after {
+    top: 43px;
+    transform-origin: 0 0;
+    transform: rotateZ(-60deg);
+  }
+  &:hover:after {
+    background: $slider-arrow-hover-color;
+    transform: rotateZ(-50deg);
+  }
+  &.slick-prev {
+    left: 50px;
+  }
+  &.slick-next {
+    right: 50px;
+    &:before {
+      transform-origin: 100% 0;
+      top: 43px;
+      left: -4px;
     }
     &:after {
-      top: 43px;
-      transform-origin: 0 0;
-      transform: rotateZ(-60deg);
-    }
-    &:hover:after {
-      background: $slider-arrow-hover-color;
-      transform: rotateZ(-50deg);
-    }
-    &.slick-prev {
-      left: 50px;
-    }
-    &.slick-next {
-      right: 50px;
-      &:before {
-        transform-origin: 100% 0;
-        top: 43px;
-        left: -4px;
-      }
-      &:after {
-        transform-origin: 100% 100%;
-        top: 36px;
-        left: -4px;
-      }
+      transform-origin: 100% 100%;
+      top: 36px;
+      left: -4px;
     }
   }
 }
@@ -165,9 +173,12 @@
     padding-bottom: 100%;
     overflow: hidden;
     transform-origin: 50% 100%;
+    transition: transform .4s ease;
     img {
       position: absolute;
       max-height: 100%;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
     }
   }
   .name {
@@ -185,6 +196,10 @@
   &.slick-center {
     .img_wrap {
       transform: scale(1.2);
+      img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
     }
     .name {
       color: $slider-arrow-hover-color;

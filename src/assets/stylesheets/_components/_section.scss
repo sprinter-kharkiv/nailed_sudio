@@ -13,9 +13,17 @@
     margin-right: 0;
   }
 }
+.home_slider.add-margin {
+  @include respond-to(sm) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 
 .section-title {
   position: relative;
+  top: 10px;
   width: 320px;
   height: 50px;
   margin: 0 auto;
@@ -23,11 +31,28 @@
   color: $title-color;
   line-height: 50px;
   text-align: center;
-  box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.67);
+  box-shadow: 0 0 0 30px rgba(227, 223, 255, 0.67);
   z-index: 5;
+  transition: box-shadow .4s ease;
   @include respond-to(xs-small) {
     width: 230px;
+    box-shadow: 0 0 0 15px rgba(227, 223, 255, 0.67);
   }
+}
+.contact_block, .our_team {
+  .section-title {
+    top: -15px;
+  }
+}
+.section-title.link {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -mos-user-select: none;
+  user-select: none;
+  &:active {
+    transform: translate(1px,1px);
+  }
+
 }
 
 .section {

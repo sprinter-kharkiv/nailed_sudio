@@ -1,14 +1,96 @@
-
-
+/*----------------------
+        about bg
+  ---------------------*/
 
 .header_banner {
-  background: url("../images/temp/header_bg.jpg") no-repeat 0 50%, url("../images/temp/header_bg.jpg") no-repeat 100% 50%;
-  //background-size: cover;
-  .container {
-    background-color: rgba(0, 179, 238, 0.69);
+  background: url("../images/bg/header_banner.jpg") no-repeat 0 50%, url("../images/bg/header_banner.jpg") no-repeat 100% 50%;
+  background-color: #4a4b65;
+  @include respond-to(md) {
+    background: url("../images/bg/header_banner_small.jpg") no-repeat 0 50%, url("../images/bg/header_banner_small.jpg") no-repeat 100% 50%;
   }
 }
+
 .header_banner-img {
-  background-image: url('../images/temp/About_bg.jpg');
+  position: relative;
+  background-color: #89d2f7;
+  background-position: 0 0;
   height: 400px;
+  img {
+    position: absolute;
+    right: 5%;
+    top: 46%;
+    width: 27%;
+    @include respond-to(xs) {
+      display: none;
+    }
+  }
+  @include respond-to(xs-add) {
+    height: 300px;
+  }
 }
+.services {
+  .header_banner-img {
+
+  }
+}
+
+/*----------------------
+        home slider
+  ---------------------*/
+.home_slider {
+  height: 400px;
+  .slick-arrow.slick-next {
+    right: -75px;
+  }
+  .slick-arrow.slick-prev {
+    left: -75px;
+  }
+  .slick-arrow.slick-next, .slick-arrow.slick-prev {
+    @include respond-to(md) {
+      display: none!important;
+    }
+  }
+}
+
+.home_slider__item {
+  position: relative;
+  background: $contact-bg-color;
+  a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    &:hover, &:active, &:visited {
+      color: #e3e3e3;
+    }
+  }
+  .section-title {
+    position: absolute;
+    top: 290px;
+    left: 50%;
+    margin-left: -160px;
+    @include respond-to(xs-small){
+      margin-left: -115px;
+    }
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  @include respond-to(sm){
+    padding: 10px;
+  }
+
+}
+
+.home_slider__img {
+  height: 400px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  @include respond-to(sm){
+    background-size: contain;
+    background-position: 50% 0;
+    height: 380px;
+  }
+}
+
+

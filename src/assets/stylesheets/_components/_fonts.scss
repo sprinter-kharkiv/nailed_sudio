@@ -18,3 +18,11 @@ $font-path: '../fonts/';
   url('#{$font-path}RobotoBlack/roboto-black-webfont.woff') format('woff'),
   url('#{$font-path}RobotoBlack/Roboto-black.ttf') format('ttf');
 }
+@font-face {
+  font-family: 'RobotoMedium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}RobotoMedium/roboto-medium-webfont.woff2') format('woff2'),
+  url('#{$font-path}RobotoMedium/roboto-medium-webfont.woff') format('woff'),
+  url('#{$font-path}RobotoMedium/Roboto-medium.ttf') format('ttf');
+}

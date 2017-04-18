@@ -1,6 +1,6 @@
 /* BOOTSTRAP VARIABLES */
 .container {
-  //min-width: 320px;
+  min-width: 320px;
 }
 
 @media (min-width: 1450px) {
@@ -8,4 +8,8 @@
     width: 1404px;
   }
 }
-
+.no_padding_m {
+  @include respond-to(xs) {
+    padding: 0;
+  }
+}

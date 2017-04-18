@@ -1,0 +1,61 @@
+.studio {
+  position: relative;
+  padding-bottom: 40px;
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -160px;
+    content: '';
+    width: 320px;
+    height: 8px;
+    background-color: $tile-bg-color;
+    @include respond-to(xs) {
+      margin-left: -80px;
+      width: 160px;
+      height: 4px;
+    }
+  }
+}
+.studio_wrap {
+  background: url("../images/temp/studio_bg.jpg") repeat-x 0 50%;
+  background-size: contain;
+  .container {
+    padding: 0;
+  }
+}
+.studio_item {
+  position: relative;
+  float: left;
+  width: 16%;
+  margin-right: 0.8%;
+  //margin-bottom: 0.8%;
+  padding-bottom: 16%;
+  background-color: #00b3ee;
+  overflow: hidden;
+  &:nth-child(6) {
+    margin-right: 0;
+    margin-bottom: 0.8%;
+  }
+  &:nth-child(12) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  img {
+    position: absolute;
+    max-width: 100%;
+    min-height: 100%;
+  }
+  @include respond-to(sm) {
+    width: 32%;
+    padding-bottom: 32%;
+    margin-right: 2%;
+    &:nth-child(3n) {
+      margin-right: 0;
+      margin-bottom: 2%;
+    }
+    &:nth-child(12) {
+      margin-bottom: 0;
+    }
+  }
+}
