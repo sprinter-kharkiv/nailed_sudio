@@ -87,7 +87,7 @@
     background: #ff5246;
     border: none;
     border-radius: 6px;
-    box-shadow: inset 0 0 10px 5px rgba(255, 255, 255, 0.3), 2px 2px 12px 2px rgba(10, 0, 227, 0.7);
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.43), 2px 2px 20px 0px rgba(10, 0, 227, 0.7);
     font-family: $font-medium;
     text-transform: uppercase;
     font-size: 14px;
@@ -95,11 +95,11 @@
     letter-spacing: 1px;
     -webkit-appearance: none;
     &:hover {
-      background: #c43f36;
+      box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.43), 2px 2px 20px 2px rgba(10, 0, 227, 0.7);
     }
     &:active {
-      transform: translate(1px, 1px);
-      box-shadow: inset 0 3px 10px 5px rgba(255, 255, 255, 0.3), 1px 1px 20px 1px rgba(10, 0, 227, 0.7);
+      //transform: translate(1px, 1px);
+      box-shadow: inset 0 3px 10px 2px rgba(0, 0, 0, 0.43), 1px 1px 20px 1px rgba(10, 0, 227, 0.7);
     }
     @include respond-to(xs-small) {
       left: 0;
@@ -124,19 +124,17 @@
   width: 40%;
   padding-bottom: 38%;
   overflow: hidden;
-  iframe {
-    position: absolute;
-    bottom: 0;
+  @include respond-to(xs) {
     width: 100%;
-    height: 390px;
-
+    padding-bottom: 65%;
+    margin-bottom: 10%;
   }
   @include respond-to(sm) {
     position: relative;
     bottom: 0;
   }
   @include respond-to(xs-small) {
-    display: none;
+    //display: none;
   }
 }
 
@@ -169,7 +167,10 @@
   @include respond-to(xs-small) {
     width: 100%;
   }
-
+  @include respond-to(xs) {
+    float: right;
+    margin-top: -45px;
+  }
 }
 
 .contact__social-link {
